@@ -2,7 +2,7 @@
 /* CSS Document */
 
 html {
-	background: #555;
+	background: #fff;
 }
 
 body {
@@ -11,10 +11,20 @@ body {
 	margin: auto;
 	background:#FEFFFD;
 	font-size: 1em;
+	color: #222;
 }
 
+a {
+	text-decoration:none;
+}
+a:link, a:visted{
+	color:#762a62;
+}
+a:hover, a:active{
+	color:#DF33B2;
+}
 nav {
-	background:#262626;
+	background:#762a62;
 }
 nav ul{
 	list-style-type: none;
@@ -27,26 +37,29 @@ nav li{
 		margin: auto;
 	padding: 10px 3vw 10px 5px;
 }
-a {
-	text-decoration:none;
-}
-a, a:visted{
-	color:#762a62;
-}
+
 nav a, p, li {
 	font-family: 'Open Sans', sans-serif;
+}
+nav a:link, nav a:visited {
+	color: #e7e7e7;
+}
+nav a:hover {
+	color: #ff69d8;
 }
 h1 {
 	font-family: 'PT Serif', serif;
 	font-size: 2em;
 	margin: auto;
 	margin-top: 15px;
+	color: #222;
 }
 h2 {
 	font-family: 'PT Serif', serif;
 	font-size: 1.5em;
 	margin: auto;
 	margin-top: 10px;
+	color: #222;
 }
 h3 {
 	font-family: 'open sans', sans-serif;
@@ -69,6 +82,12 @@ h3 {
 	list-style: square;
 }
 @media only screen and ( max-width : 500px ){
+	body {
+		width: 100%;
+	}
+	nav, h1, h2, h3, li, p{
+		padding-left: 5px;
+	}
 	nav ul {
 		flex-direction: column;
 		display: block;
