@@ -76,11 +76,30 @@ h3 {
 	margin: 10px auto auto auto;
 }
 .topicbody {
-  display: none;
+	display: none;
 }
 .topicbody li{
 	list-style: square;
 }
+
+.dropdown {
+	position: absolute;
+	display: block;
+	background: #e7e7e7;
+	box-shadow: 2px, 3px, #111;
+}
+.dropdown li {
+	padding: 5px 10px 5px 4px;
+}
+.dropdown a:link, .dropdown a:visited {
+	color: #762a62;
+}
+.hidden{
+	visibility: hidden;
+	opacity: 0;
+	display: none;
+}
+
 @media only screen and ( max-width : 500px ){
 	body {
 		width: 100%;
@@ -94,9 +113,12 @@ h3 {
 	}
 	nav li {
 		margin: 0;
-		padding: 0;
+		padding: 10px, 0, 10px, 0;
 	}
 	nav a {
-		display: block;
+		display: inline-block;
+	}
+	.dropdown {
+		position: relative;
 	}
 }
