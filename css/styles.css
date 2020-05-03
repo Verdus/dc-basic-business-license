@@ -1,15 +1,83 @@
 @charset "utf-8";
 /* CSS Document */
 
-.topicbody {
-  display: none;
-  position: absolute;
+html {
+	background: #555;
 }
 
-.Open {
-	display: inline;
-	position: relative;
+body {
+	width: 95%;
+	max-width: 1000px;
+	margin: auto;
+	background:#FEFFFD;
+	font-size: 1em;
 }
-.blue {
-	background:#8A292A;
+
+nav {
+	background:#262626;
+}
+nav ul{
+	list-style-type: none;
+	text-decoration: none;
+	display: inline-flex;
+	margin: 0;
+	padding: 0;
+}
+nav li{
+		margin: auto;
+	padding: 10px 3vw 10px 5px;
+}
+a {
+	text-decoration:none;
+}
+a, a:visted{
+	color:#762a62;
+}
+nav a, p, li {
+	font-family: 'Open Sans', sans-serif;
+}
+h1 {
+	font-family: 'PT Serif', serif;
+	font-size: 2em;
+	margin: auto;
+	margin-top: 15px;
+}
+h2 {
+	font-family: 'PT Serif', serif;
+	font-size: 1.5em;
+	margin: auto;
+	margin-top: 10px;
+}
+h3 {
+	font-family: 'open sans', sans-serif;
+	font-size: 1.2em;
+	margin-right: auto;
+}
+.list {
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+.topicheader {
+	display: inline-block;
+	width: 100%;
+	margin: 10px auto auto auto;
+}
+.topicbody {
+  display: none;
+}
+.topicbody li{
+	list-style: square;
+}
+@media only screen and ( max-width : 500px ){
+	nav ul {
+		flex-direction: column;
+		display: block;
+	}
+	nav li {
+		margin: 0;
+		padding: 0;
+	}
+	nav a {
+		display: block;
+	}
 }
